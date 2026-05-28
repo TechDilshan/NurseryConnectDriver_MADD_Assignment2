@@ -1,10 +1,3 @@
-//
-//  NurseryConnectMacOSUITestsLaunchTests.swift
-//  NurseryConnectMacOSUITests
-//
-//  Created by chamika dilshan on 2026-05-28.
-//
-
 import XCTest
 
 final class NurseryConnectMacOSUITestsLaunchTests: XCTestCase {
@@ -17,16 +10,23 @@ final class NurseryConnectMacOSUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testLaunch() throws {
+    @MainActor
+    func testLaunchScreenLoadsMainDashboard() throws {
         let app = XCUIApplication()
         app.launch()
 
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
+        XCTAssertTrue(app.staticTexts["Driver Operations Center"].waitForExistence(timeout: 5))
 
         let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
+        attachment.name = "NurseryConnect macOS Dashboard Launch"
         attachment.lifetime = .keepAlways
         add(attachment)
+    }
+
+    @MainActor
+    func testLaunchPerformance() throws {
+        measure(metrics: [XCTApplicationLaunchMetric()]) {
+            XCUIApplication().launch()
+        }
     }
 }

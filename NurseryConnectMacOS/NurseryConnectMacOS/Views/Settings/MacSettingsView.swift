@@ -6,6 +6,7 @@ struct MacSettingsView: View {
     @EnvironmentObject var themeViewModel: ThemeViewModel
     @EnvironmentObject var incidentViewModel: IncidentViewModel
     @EnvironmentObject var tripHistoryViewModel: TripHistoryViewModel
+    @EnvironmentObject var routePreferenceViewModel: RoutePreferenceViewModel
 
     @State private var showResetTripConfirmation = false
     @State private var showClearIncidentsConfirmation = false
@@ -15,6 +16,7 @@ struct MacSettingsView: View {
             VStack(alignment: .leading, spacing: 24) {
                 header
                 appearanceSection
+                routePreferenceSection
                 securitySection
                 AccessibilitySettingsView()
                 tripControlsSection
@@ -44,7 +46,7 @@ struct MacSettingsView: View {
             Text("Settings")
                 .font(.largeTitle.bold())
 
-            Text("Manage appearance, local demo data, security, and route simulation settings.")
+            Text("Manage appearance, route preferences, security, local demo data, and route simulation settings.")
                 .foregroundStyle(.secondary)
         }
     }
@@ -69,6 +71,11 @@ struct MacSettingsView: View {
         .padding()
         .background(Color.appCardBackground)
         .clipShape(RoundedRectangle(cornerRadius: 20))
+    }
+
+    private var routePreferenceSection: some View {
+        RoutePreferenceSettingsView()
+            .environmentObject(routePreferenceViewModel)
     }
 
     private var securitySection: some View {
@@ -166,6 +173,18 @@ struct MacSettingsView: View {
                 title: "Trip History",
                 value: "\(tripHistoryViewModel.records.count)",
                 systemImage: "archivebox.fill"
+            )
+
+            InfoCardView(
+                title: "Route Priority",
+                value: routePreferenceViewModel.selectedPriority.title,
+                systemImage: "point.topleft.down.curvedto.point.bottomright.up"
+            )
+
+            InfoCardView(
+                title: "GPS Update Frequency",
+                value: routePreferenceViewModel.updateFrequencyText,
+                systemImage: "location.fill"
             )
 
             InfoCardView(

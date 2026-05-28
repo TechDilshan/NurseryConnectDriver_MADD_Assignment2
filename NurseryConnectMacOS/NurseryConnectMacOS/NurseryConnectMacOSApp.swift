@@ -19,6 +19,7 @@ struct NurseryConnectMacOSApp: App {
     @StateObject private var tripHistoryViewModel = TripHistoryViewModel()
     @StateObject private var driverNotesViewModel = DriverNotesViewModel()
     @StateObject private var navigationViewModel = MacNavigationViewModel()
+    @StateObject private var routePreferenceViewModel = RoutePreferenceViewModel()
 
     var body: some Scene {
 
@@ -32,6 +33,7 @@ struct NurseryConnectMacOSApp: App {
                 .environmentObject(tripHistoryViewModel)
                 .environmentObject(driverNotesViewModel)
                 .environmentObject(navigationViewModel)
+                .environmentObject(routePreferenceViewModel)
                 .preferredColorScheme(themeViewModel.colorScheme)
                 .frame(minWidth: 1280, minHeight: 820)
         }
@@ -52,6 +54,7 @@ struct NurseryConnectMacOSApp: App {
                 .environmentObject(themeViewModel)
                 .environmentObject(incidentViewModel)
                 .environmentObject(tripHistoryViewModel)
+                .environmentObject(routePreferenceViewModel)
                 .frame(width: 700, height: 620)
         }
 

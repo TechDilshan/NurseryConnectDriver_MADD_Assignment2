@@ -110,6 +110,10 @@
 		14BAD5352FC86ABC00E56229 /* LocalAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5342FC86ABC00E56229 /* LocalAuthenticationService.swift */; };
 		14BAD5372FC86AD700E56229 /* SecurityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5362FC86AD700E56229 /* SecurityViewModel.swift */; };
 		14BAD53A2FC86AF900E56229 /* SecureAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5392FC86AF900E56229 /* SecureAccessView.swift */; };
+		14BAD53C2FC875E300E56229 /* RoutePriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD53B2FC875E300E56229 /* RoutePriority.swift */; };
+		14BAD53E2FC8760700E56229 /* RoutePreferenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD53D2FC8760700E56229 /* RoutePreferenceService.swift */; };
+		14BAD5402FC8761F00E56229 /* RoutePreferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD53F2FC8761F00E56229 /* RoutePreferenceViewModel.swift */; };
+		14BAD5422FC8763000E56229 /* RoutePreferenceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5412FC8763000E56229 /* RoutePreferenceSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +241,10 @@
 		14BAD5342FC86ABC00E56229 /* LocalAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationService.swift; sourceTree = "<group>"; };
 		14BAD5362FC86AD700E56229 /* SecurityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityViewModel.swift; sourceTree = "<group>"; };
 		14BAD5392FC86AF900E56229 /* SecureAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAccessView.swift; sourceTree = "<group>"; };
+		14BAD53B2FC875E300E56229 /* RoutePriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePriority.swift; sourceTree = "<group>"; };
+		14BAD53D2FC8760700E56229 /* RoutePreferenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePreferenceService.swift; sourceTree = "<group>"; };
+		14BAD53F2FC8761F00E56229 /* RoutePreferenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePreferenceViewModel.swift; sourceTree = "<group>"; };
+		14BAD5412FC8763000E56229 /* RoutePreferenceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePreferenceSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +369,7 @@
 				14BAD4902FC82A0200E56229 /* ReportExportService.swift */,
 				14BAD4922FC82A0700E56229 /* NotificationService.swift */,
 				14BAD5342FC86ABC00E56229 /* LocalAuthenticationService.swift */,
+				14BAD53D2FC8760700E56229 /* RoutePreferenceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -383,6 +392,7 @@
 				14BAD4AC2FC82A5F00E56229 /* TripHistoryRecord.swift */,
 				14BAD4AE2FC82A6300E56229 /* DriverNote.swift */,
 				14BAD4B02FC82A6700E56229 /* SidebarSelection.swift */,
+				14BAD53B2FC875E300E56229 /* RoutePriority.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,6 +409,7 @@
 				14BAD4BE2FC82AA200E56229 /* DriverNotesViewModel.swift */,
 				14BAD4C02FC82AA700E56229 /* MacNavigationViewModel.swift */,
 				14BAD5362FC86AD700E56229 /* SecurityViewModel.swift */,
+				14BAD53F2FC8761F00E56229 /* RoutePreferenceViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -541,6 +552,7 @@
 				14BAD5282FC82C1B00E56229 /* SettingsView.swift */,
 				14BAD52A2FC82C2100E56229 /* MacSettingsView.swift */,
 				14BAD52C2FC82C2600E56229 /* AccessibilitySettingsView.swift */,
+				14BAD5412FC8763000E56229 /* RoutePreferenceSettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -755,6 +767,7 @@
 				14BAD4872FC829DE00E56229 /* MockDataService.swift in Sources */,
 				14BAD4892FC829E500E56229 /* LocationService.swift in Sources */,
 				14BAD53A2FC86AF900E56229 /* SecureAccessView.swift in Sources */,
+				14BAD5422FC8763000E56229 /* RoutePreferenceSettingsView.swift in Sources */,
 				14BAD5032FC82B8E00E56229 /* PickupConfirmationView.swift in Sources */,
 				14BAD4C72FC82AC500E56229 /* MacDashboardView.swift in Sources */,
 				14BAD48D2FC829F100E56229 /* IncidentStorageService.swift in Sources */,
@@ -763,6 +776,7 @@
 				14BAD5192FC82BE000E56229 /* WeeklyTripsChartView.swift in Sources */,
 				14BAD47F2FC829C000E56229 /* AccessibilityHelper.swift in Sources */,
 				14BAD5252FC82C0B00E56229 /* DriverNotesListView.swift in Sources */,
+				14BAD53E2FC8760700E56229 /* RoutePreferenceService.swift in Sources */,
 				14BAD50D2FC82BB700E56229 /* IncidentSummaryCardView.swift in Sources */,
 				14BAD4A72FC82A5200E56229 /* IncidentType.swift in Sources */,
 				14BAD4792FC8299D00E56229 /* Constants.swift in Sources */,
@@ -775,11 +789,13 @@
 				14BAD4F12FC82B5000E56229 /* PassengerListView.swift in Sources */,
 				14BAD4D32FC82AF100E56229 /* SectionHeaderView.swift in Sources */,
 				14BAD5132FC82BCD00E56229 /* PickupChartView.swift in Sources */,
+				14BAD5402FC8761F00E56229 /* RoutePreferenceViewModel.swift in Sources */,
 				14BAD4852FC829D800E56229 /* StorageService.swift in Sources */,
 				14BAD48F2FC829FC00E56229 /* AnalyticsService.swift in Sources */,
 				14BAD4832FC829D000E56229 /* DataService.swift in Sources */,
 				14BAD4D12FC82AEC00E56229 /* EmptyStateView.swift in Sources */,
 				14BAD5052FC82B9300E56229 /* TripHistoryView.swift in Sources */,
+				14BAD53C2FC875E300E56229 /* RoutePriority.swift in Sources */,
 				14BAD5012FC82B8400E56229 /* MacChildDetailPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

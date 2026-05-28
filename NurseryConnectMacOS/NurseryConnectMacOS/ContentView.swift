@@ -17,6 +17,7 @@ struct ContentView: View {
     @EnvironmentObject var tripHistoryViewModel: TripHistoryViewModel
     @EnvironmentObject var driverNotesViewModel: DriverNotesViewModel
     @EnvironmentObject var navigationViewModel: MacNavigationViewModel
+    @EnvironmentObject var routePreferenceViewModel: RoutePreferenceViewModel
 
     var body: some View {
         MacRootView()
@@ -28,6 +29,7 @@ struct ContentView: View {
             .environmentObject(tripHistoryViewModel)
             .environmentObject(driverNotesViewModel)
             .environmentObject(navigationViewModel)
+            .environmentObject(routePreferenceViewModel)
             .onAppear {
                 refreshAnalytics()
             }
@@ -51,4 +53,5 @@ struct ContentView: View {
         .environmentObject(TripHistoryViewModel())
         .environmentObject(DriverNotesViewModel())
         .environmentObject(MacNavigationViewModel())
+        .environmentObject(RoutePreferenceViewModel())
 }
