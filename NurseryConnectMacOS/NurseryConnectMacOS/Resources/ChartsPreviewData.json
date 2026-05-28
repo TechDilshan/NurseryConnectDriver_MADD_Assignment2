@@ -1,0 +1,69 @@
+{
+  "pickupStatusData": [
+    {
+      "title": "Pending",
+      "value": 2
+    },
+    {
+      "title": "On Board",
+      "value": 1
+    },
+    {
+      "title": "Dropped Off",
+      "value": 2
+    }
+  ],
+
+  "incidentSeverityData": [
+    {
+      "title": "Low",
+      "value": 3
+    },
+    {
+      "title": "Medium",
+      "value": 2
+    },
+    {
+      "title": "High",
+      "value": 1
+    }
+  ],
+
+  "weeklyRoutePerformanceData": [
+    {
+      "title": "Mon",
+      "value": 92
+    },
+    {
+      "title": "Tue",
+      "value": 88
+    },
+    {
+      "title": "Wed",
+      "value": 95
+    },
+    {
+      "title": "Thu",
+      "value": 91
+    },
+    {
+      "title": "Fri",
+      "value": 97
+    }
+  ],
+
+  "driverEfficiencyData": [
+    {
+      "title": "Completed",
+      "value": 95
+    },
+    {
+      "title": "Delayed",
+      "value": 8
+    },
+    {
+      "title": "Cancelled",
+      "value": 2
+    }
+  ]
+}

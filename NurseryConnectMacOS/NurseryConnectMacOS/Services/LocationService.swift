@@ -1,0 +1,73 @@
+import Foundation
+
+protocol LocationServiceProtocol {
+    func initialLocation() -> DriverLocation
+    func defaultStops() -> [RouteStop]
+    func samplePassengers() -> [Passenger]
+}
+
+final class LocationService: LocationServiceProtocol {
+    func initialLocation() -> DriverLocation {
+        DriverLocation(
+            latitude: 6.9271,
+            longitude: 79.8612,
+            passengers: []
+        )
+    }
+
+    func defaultStops() -> [RouteStop] {
+        [
+            RouteStop(
+                title: "Little Stars Nursery",
+                subtitle: "Starting point",
+                latitude: 6.9271,
+                longitude: 79.8612,
+                order: 1
+            ),
+            RouteStop(
+                title: "Little Stars Preschool",
+                subtitle: "School Gate A",
+                latitude: 6.9286,
+                longitude: 79.8645,
+                order: 2
+            ),
+            RouteStop(
+                title: "Sunshine Kids School",
+                subtitle: "Main Entrance",
+                latitude: 6.9300,
+                longitude: 79.8680,
+                order: 3
+            ),
+            RouteStop(
+                title: "Happy Kids Center",
+                subtitle: "Side Gate",
+                latitude: 6.9322,
+                longitude: 79.8710,
+                order: 4
+            ),
+            RouteStop(
+                title: "Rainbow Early Years",
+                subtitle: "Reception Gate",
+                latitude: 6.9340,
+                longitude: 79.8732,
+                order: 5
+            ),
+            RouteStop(
+                title: "Little Stars Nursery",
+                subtitle: "Final destination",
+                latitude: 6.9271,
+                longitude: 79.8612,
+                order: 6
+            )
+        ]
+    }
+
+    func samplePassengers() -> [Passenger] {
+        [
+            Passenger(name: "Emma Johnson", age: 4),
+            Passenger(name: "Liam Smith", age: 5),
+            Passenger(name: "Olivia Brown", age: 3),
+            Passenger(name: "Noah Wilson", age: 4)
+        ]
+    }
+}

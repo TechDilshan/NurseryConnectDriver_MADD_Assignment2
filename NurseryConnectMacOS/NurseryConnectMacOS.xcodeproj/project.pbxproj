@@ -1,0 +1,1106 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14BAD43E2FC8268A00E56229 /* NurseryConnectMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD43D2FC8268A00E56229 /* NurseryConnectMacOSApp.swift */; };
+		14BAD4402FC8268A00E56229 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD43F2FC8268A00E56229 /* ContentView.swift */; };
+		14BAD4422FC8268C00E56229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD4412FC8268C00E56229 /* Assets.xcassets */; };
+		14BAD4452FC8268C00E56229 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD4442FC8268C00E56229 /* Preview Assets.xcassets */; };
+		14BAD4502FC8268C00E56229 /* NurseryConnectMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD44F2FC8268C00E56229 /* NurseryConnectMacOSTests.swift */; };
+		14BAD45A2FC8268C00E56229 /* NurseryConnectMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4592FC8268C00E56229 /* NurseryConnectMacOSUITests.swift */; };
+		14BAD45C2FC8268C00E56229 /* NurseryConnectMacOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD45B2FC8268C00E56229 /* NurseryConnectMacOSUITestsLaunchTests.swift */; };
+		14BAD4792FC8299D00E56229 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4782FC8299D00E56229 /* Constants.swift */; };
+		14BAD47B2FC829AF00E56229 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD47A2FC829AF00E56229 /* DateFormatterHelper.swift */; };
+		14BAD47D2FC829B800E56229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD47C2FC829B800E56229 /* Extensions.swift */; };
+		14BAD47F2FC829C000E56229 /* AccessibilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD47E2FC829C000E56229 /* AccessibilityHelper.swift */; };
+		14BAD4812FC829C600E56229 /* ChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4802FC829C600E56229 /* ChartHelper.swift */; };
+		14BAD4832FC829D000E56229 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4822FC829D000E56229 /* DataService.swift */; };
+		14BAD4852FC829D800E56229 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4842FC829D800E56229 /* StorageService.swift */; };
+		14BAD4872FC829DE00E56229 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4862FC829DE00E56229 /* MockDataService.swift */; };
+		14BAD4892FC829E500E56229 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4882FC829E500E56229 /* LocationService.swift */; };
+		14BAD48B2FC829EB00E56229 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD48A2FC829EB00E56229 /* ThemeService.swift */; };
+		14BAD48D2FC829F100E56229 /* IncidentStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD48C2FC829F100E56229 /* IncidentStorageService.swift */; };
+		14BAD48F2FC829FC00E56229 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD48E2FC829FC00E56229 /* AnalyticsService.swift */; };
+		14BAD4912FC82A0200E56229 /* ReportExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4902FC82A0200E56229 /* ReportExportService.swift */; };
+		14BAD4932FC82A0700E56229 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4922FC82A0700E56229 /* NotificationService.swift */; };
+		14BAD4952FC82A1800E56229 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4942FC82A1800E56229 /* Child.swift */; };
+		14BAD4972FC82A2100E56229 /* TransportTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4962FC82A2100E56229 /* TransportTrip.swift */; };
+		14BAD4992FC82A2800E56229 /* DriverLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4982FC82A2800E56229 /* DriverLocation.swift */; };
+		14BAD49B2FC82A2E00E56229 /* TransportStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD49A2FC82A2E00E56229 /* TransportStatus.swift */; };
+		14BAD49D2FC82A3500E56229 /* RouteStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD49C2FC82A3500E56229 /* RouteStop.swift */; };
+		14BAD49F2FC82A3A00E56229 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD49E2FC82A3A00E56229 /* AppTheme.swift */; };
+		14BAD4A12FC82A3F00E56229 /* MapStyleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4A02FC82A3F00E56229 /* MapStyleOption.swift */; };
+		14BAD4A32FC82A4800E56229 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4A22FC82A4800E56229 /* Passenger.swift */; };
+		14BAD4A52FC82A4D00E56229 /* IncidentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4A42FC82A4D00E56229 /* IncidentReport.swift */; };
+		14BAD4A72FC82A5200E56229 /* IncidentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4A62FC82A5200E56229 /* IncidentType.swift */; };
+		14BAD4A92FC82A5600E56229 /* IncidentSeverity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4A82FC82A5600E56229 /* IncidentSeverity.swift */; };
+		14BAD4AB2FC82A5A00E56229 /* AnalyticsDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4AA2FC82A5A00E56229 /* AnalyticsDataPoint.swift */; };
+		14BAD4AD2FC82A5F00E56229 /* TripHistoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4AC2FC82A5F00E56229 /* TripHistoryRecord.swift */; };
+		14BAD4AF2FC82A6300E56229 /* DriverNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4AE2FC82A6300E56229 /* DriverNote.swift */; };
+		14BAD4B12FC82A6700E56229 /* SidebarSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4B02FC82A6700E56229 /* SidebarSelection.swift */; };
+		14BAD4B32FC82A7500E56229 /* TransportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4B22FC82A7500E56229 /* TransportViewModel.swift */; };
+		14BAD4B52FC82A8000E56229 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4B42FC82A8000E56229 /* LocationViewModel.swift */; };
+		14BAD4B72FC82A8C00E56229 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4B62FC82A8C00E56229 /* ThemeViewModel.swift */; };
+		14BAD4B92FC82A9200E56229 /* IncidentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4B82FC82A9200E56229 /* IncidentViewModel.swift */; };
+		14BAD4BB2FC82A9800E56229 /* AnalyticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4BA2FC82A9800E56229 /* AnalyticsViewModel.swift */; };
+		14BAD4BD2FC82A9D00E56229 /* TripHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4BC2FC82A9D00E56229 /* TripHistoryViewModel.swift */; };
+		14BAD4BF2FC82AA200E56229 /* DriverNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4BE2FC82AA200E56229 /* DriverNotesViewModel.swift */; };
+		14BAD4C12FC82AA700E56229 /* MacNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4C02FC82AA700E56229 /* MacNavigationViewModel.swift */; };
+		14BAD4C32FC82AB900E56229 /* MacRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4C22FC82AB900E56229 /* MacRootView.swift */; };
+		14BAD4C52FC82AC000E56229 /* MacSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4C42FC82AC000E56229 /* MacSidebarView.swift */; };
+		14BAD4C72FC82AC500E56229 /* MacDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4C62FC82AC500E56229 /* MacDashboardView.swift */; };
+		14BAD4C92FC82ACA00E56229 /* MacToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4C82FC82ACA00E56229 /* MacToolbarView.swift */; };
+		14BAD4CB2FC82AD000E56229 /* WindowGroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4CA2FC82AD000E56229 /* WindowGroupManager.swift */; };
+		14BAD4CD2FC82AE100E56229 /* ChildRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4CC2FC82AE100E56229 /* ChildRowView.swift */; };
+		14BAD4CF2FC82AE700E56229 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4CE2FC82AE700E56229 /* PrimaryButton.swift */; };
+		14BAD4D12FC82AEC00E56229 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4D02FC82AEC00E56229 /* EmptyStateView.swift */; };
+		14BAD4D32FC82AF100E56229 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4D22FC82AF100E56229 /* SectionHeaderView.swift */; };
+		14BAD4D52FC82AF600E56229 /* InfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4D42FC82AF600E56229 /* InfoCardView.swift */; };
+		14BAD4D72FC82AFB00E56229 /* TripStatusBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4D62FC82AFB00E56229 /* TripStatusBannerView.swift */; };
+		14BAD4D92FC82B0000E56229 /* MacInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4D82FC82B0000E56229 /* MacInfoCardView.swift */; };
+		14BAD4DB2FC82B0600E56229 /* MacStatusPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4DA2FC82B0600E56229 /* MacStatusPillView.swift */; };
+		14BAD4DD2FC82B0C00E56229 /* ToolbarActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4DC2FC82B0C00E56229 /* ToolbarActionButton.swift */; };
+		14BAD4DF2FC82B1100E56229 /* DashboardMetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4DE2FC82B1100E56229 /* DashboardMetricCard.swift */; };
+		14BAD4E12FC82B1600E56229 /* AnalyticsSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4E02FC82B1600E56229 /* AnalyticsSummaryCard.swift */; };
+		14BAD4E32FC82B1F00E56229 /* DashboardOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4E22FC82B1F00E56229 /* DashboardOverviewView.swift */; };
+		14BAD4E52FC82B2500E56229 /* VehicleStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4E42FC82B2500E56229 /* VehicleStatusView.swift */; };
+		14BAD4E72FC82B2A00E56229 /* DailySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4E62FC82B2A00E56229 /* DailySummaryView.swift */; };
+		14BAD4E92FC82B2E00E56229 /* DriverPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4E82FC82B2E00E56229 /* DriverPerformanceView.swift */; };
+		14BAD4EB2FC82B3700E56229 /* DriverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4EA2FC82B3700E56229 /* DriverMapView.swift */; };
+		14BAD4ED2FC82B3C00E56229 /* MacLiveRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4EC2FC82B3C00E56229 /* MacLiveRouteView.swift */; };
+		14BAD4EF2FC82B4500E56229 /* RouteInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4EE2FC82B4500E56229 /* RouteInfoCardView.swift */; };
+		14BAD4F12FC82B5000E56229 /* PassengerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4F02FC82B5000E56229 /* PassengerListView.swift */; };
+		14BAD4F32FC82B5800E56229 /* MacRouteDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4F22FC82B5800E56229 /* MacRouteDetailPanel.swift */; };
+		14BAD4F52FC82B5D00E56229 /* RouteDistanceBreakdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4F42FC82B5D00E56229 /* RouteDistanceBreakdownView.swift */; };
+		14BAD4F72FC82B6600E56229 /* TransportListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4F62FC82B6600E56229 /* TransportListView.swift */; };
+		14BAD4F92FC82B6B00E56229 /* ChildDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4F82FC82B6B00E56229 /* ChildDetailView.swift */; };
+		14BAD4FB2FC82B7000E56229 /* TripSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4FA2FC82B7000E56229 /* TripSummaryView.swift */; };
+		14BAD4FD2FC82B7600E56229 /* StatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4FC2FC82B7600E56229 /* StatusBadgeView.swift */; };
+		14BAD4FF2FC82B7F00E56229 /* MacManifestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD4FE2FC82B7F00E56229 /* MacManifestView.swift */; };
+		14BAD5012FC82B8400E56229 /* MacChildDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5002FC82B8400E56229 /* MacChildDetailPanel.swift */; };
+		14BAD5032FC82B8E00E56229 /* PickupConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5022FC82B8E00E56229 /* PickupConfirmationView.swift */; };
+		14BAD5052FC82B9300E56229 /* TripHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5042FC82B9300E56229 /* TripHistoryView.swift */; };
+		14BAD5072FC82B9B00E56229 /* IncidentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5062FC82B9B00E56229 /* IncidentListView.swift */; };
+		14BAD5092FC82BA300E56229 /* IncidentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5082FC82BA300E56229 /* IncidentDetailView.swift */; };
+		14BAD50B2FC82BA800E56229 /* IncidentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD50A2FC82BA800E56229 /* IncidentFormView.swift */; };
+		14BAD50D2FC82BB700E56229 /* IncidentSummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD50C2FC82BB700E56229 /* IncidentSummaryCardView.swift */; };
+		14BAD50F2FC82BBF00E56229 /* EmergencyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD50E2FC82BBF00E56229 /* EmergencyAlertView.swift */; };
+		14BAD5112FC82BC800E56229 /* AnalyticsDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5102FC82BC800E56229 /* AnalyticsDashboardView.swift */; };
+		14BAD5132FC82BCD00E56229 /* PickupChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5122FC82BCD00E56229 /* PickupChartView.swift */; };
+		14BAD5152FC82BD600E56229 /* IncidentChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5142FC82BD600E56229 /* IncidentChartView.swift */; };
+		14BAD5172FC82BDB00E56229 /* RoutePerformanceChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5162FC82BDB00E56229 /* RoutePerformanceChartView.swift */; };
+		14BAD5192FC82BE000E56229 /* WeeklyTripsChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5182FC82BE000E56229 /* WeeklyTripsChartView.swift */; };
+		14BAD51B2FC82BE800E56229 /* DriverEfficiencyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD51A2FC82BE800E56229 /* DriverEfficiencyChartView.swift */; };
+		14BAD51D2FC82BF000E56229 /* ExportReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD51C2FC82BF000E56229 /* ExportReportView.swift */; };
+		14BAD51F2FC82BF500E56229 /* ComplianceNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD51E2FC82BF500E56229 /* ComplianceNotesView.swift */; };
+		14BAD5212FC82BFE00E56229 /* DailyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5202FC82BFE00E56229 /* DailyReportView.swift */; };
+		14BAD5232FC82C0400E56229 /* IncidentReportExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5222FC82C0400E56229 /* IncidentReportExportView.swift */; };
+		14BAD5252FC82C0B00E56229 /* DriverNotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5242FC82C0B00E56229 /* DriverNotesListView.swift */; };
+		14BAD5272FC82C1000E56229 /* DriverNoteEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5262FC82C1000E56229 /* DriverNoteEditorView.swift */; };
+		14BAD5292FC82C1B00E56229 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5282FC82C1B00E56229 /* SettingsView.swift */; };
+		14BAD52B2FC82C2100E56229 /* MacSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD52A2FC82C2100E56229 /* MacSettingsView.swift */; };
+		14BAD52D2FC82C2600E56229 /* AccessibilitySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD52C2FC82C2600E56229 /* AccessibilitySettingsView.swift */; };
+		14BAD52F2FC8353200E56229 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD52E2FC8353200E56229 /* SampleData.json */; };
+		14BAD5312FC8354800E56229 /* ChartsPreviewData.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BAD5302FC8354800E56229 /* ChartsPreviewData.json */; };
+		14BAD5352FC86ABC00E56229 /* LocalAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5342FC86ABC00E56229 /* LocalAuthenticationService.swift */; };
+		14BAD5372FC86AD700E56229 /* SecurityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5362FC86AD700E56229 /* SecurityViewModel.swift */; };
+		14BAD53A2FC86AF900E56229 /* SecureAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAD5392FC86AF900E56229 /* SecureAccessView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14BAD44C2FC8268C00E56229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14BAD4322FC8268A00E56229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BAD4392FC8268A00E56229;
+			remoteInfo = NurseryConnectMacOS;
+		};
+		14BAD4562FC8268C00E56229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14BAD4322FC8268A00E56229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BAD4392FC8268A00E56229;
+			remoteInfo = NurseryConnectMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14BAD43A2FC8268A00E56229 /* NurseryConnectMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NurseryConnectMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BAD43D2FC8268A00E56229 /* NurseryConnectMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseryConnectMacOSApp.swift; sourceTree = "<group>"; };
+		14BAD43F2FC8268A00E56229 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14BAD4412FC8268C00E56229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14BAD4442FC8268C00E56229 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14BAD4462FC8268C00E56229 /* NurseryConnectMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NurseryConnectMacOS.entitlements; sourceTree = "<group>"; };
+		14BAD44B2FC8268C00E56229 /* NurseryConnectMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurseryConnectMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BAD44F2FC8268C00E56229 /* NurseryConnectMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseryConnectMacOSTests.swift; sourceTree = "<group>"; };
+		14BAD4552FC8268C00E56229 /* NurseryConnectMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurseryConnectMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BAD4592FC8268C00E56229 /* NurseryConnectMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseryConnectMacOSUITests.swift; sourceTree = "<group>"; };
+		14BAD45B2FC8268C00E56229 /* NurseryConnectMacOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseryConnectMacOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14BAD4782FC8299D00E56229 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14BAD47A2FC829AF00E56229 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
+		14BAD47C2FC829B800E56229 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		14BAD47E2FC829C000E56229 /* AccessibilityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityHelper.swift; sourceTree = "<group>"; };
+		14BAD4802FC829C600E56229 /* ChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHelper.swift; sourceTree = "<group>"; };
+		14BAD4822FC829D000E56229 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		14BAD4842FC829D800E56229 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		14BAD4862FC829DE00E56229 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+		14BAD4882FC829E500E56229 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		14BAD48A2FC829EB00E56229 /* ThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
+		14BAD48C2FC829F100E56229 /* IncidentStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentStorageService.swift; sourceTree = "<group>"; };
+		14BAD48E2FC829FC00E56229 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		14BAD4902FC82A0200E56229 /* ReportExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportService.swift; sourceTree = "<group>"; };
+		14BAD4922FC82A0700E56229 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		14BAD4942FC82A1800E56229 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		14BAD4962FC82A2100E56229 /* TransportTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTrip.swift; sourceTree = "<group>"; };
+		14BAD4982FC82A2800E56229 /* DriverLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLocation.swift; sourceTree = "<group>"; };
+		14BAD49A2FC82A2E00E56229 /* TransportStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStatus.swift; sourceTree = "<group>"; };
+		14BAD49C2FC82A3500E56229 /* RouteStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStop.swift; sourceTree = "<group>"; };
+		14BAD49E2FC82A3A00E56229 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		14BAD4A02FC82A3F00E56229 /* MapStyleOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyleOption.swift; sourceTree = "<group>"; };
+		14BAD4A22FC82A4800E56229 /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		14BAD4A42FC82A4D00E56229 /* IncidentReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentReport.swift; sourceTree = "<group>"; };
+		14BAD4A62FC82A5200E56229 /* IncidentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentType.swift; sourceTree = "<group>"; };
+		14BAD4A82FC82A5600E56229 /* IncidentSeverity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentSeverity.swift; sourceTree = "<group>"; };
+		14BAD4AA2FC82A5A00E56229 /* AnalyticsDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataPoint.swift; sourceTree = "<group>"; };
+		14BAD4AC2FC82A5F00E56229 /* TripHistoryRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryRecord.swift; sourceTree = "<group>"; };
+		14BAD4AE2FC82A6300E56229 /* DriverNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverNote.swift; sourceTree = "<group>"; };
+		14BAD4B02FC82A6700E56229 /* SidebarSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarSelection.swift; sourceTree = "<group>"; };
+		14BAD4B22FC82A7500E56229 /* TransportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportViewModel.swift; sourceTree = "<group>"; };
+		14BAD4B42FC82A8000E56229 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		14BAD4B62FC82A8C00E56229 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		14BAD4B82FC82A9200E56229 /* IncidentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentViewModel.swift; sourceTree = "<group>"; };
+		14BAD4BA2FC82A9800E56229 /* AnalyticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewModel.swift; sourceTree = "<group>"; };
+		14BAD4BC2FC82A9D00E56229 /* TripHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryViewModel.swift; sourceTree = "<group>"; };
+		14BAD4BE2FC82AA200E56229 /* DriverNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverNotesViewModel.swift; sourceTree = "<group>"; };
+		14BAD4C02FC82AA700E56229 /* MacNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacNavigationViewModel.swift; sourceTree = "<group>"; };
+		14BAD4C22FC82AB900E56229 /* MacRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRootView.swift; sourceTree = "<group>"; };
+		14BAD4C42FC82AC000E56229 /* MacSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSidebarView.swift; sourceTree = "<group>"; };
+		14BAD4C62FC82AC500E56229 /* MacDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDashboardView.swift; sourceTree = "<group>"; };
+		14BAD4C82FC82ACA00E56229 /* MacToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacToolbarView.swift; sourceTree = "<group>"; };
+		14BAD4CA2FC82AD000E56229 /* WindowGroupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowGroupManager.swift; sourceTree = "<group>"; };
+		14BAD4CC2FC82AE100E56229 /* ChildRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildRowView.swift; sourceTree = "<group>"; };
+		14BAD4CE2FC82AE700E56229 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		14BAD4D02FC82AEC00E56229 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		14BAD4D22FC82AF100E56229 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		14BAD4D42FC82AF600E56229 /* InfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardView.swift; sourceTree = "<group>"; };
+		14BAD4D62FC82AFB00E56229 /* TripStatusBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStatusBannerView.swift; sourceTree = "<group>"; };
+		14BAD4D82FC82B0000E56229 /* MacInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacInfoCardView.swift; sourceTree = "<group>"; };
+		14BAD4DA2FC82B0600E56229 /* MacStatusPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacStatusPillView.swift; sourceTree = "<group>"; };
+		14BAD4DC2FC82B0C00E56229 /* ToolbarActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarActionButton.swift; sourceTree = "<group>"; };
+		14BAD4DE2FC82B1100E56229 /* DashboardMetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMetricCard.swift; sourceTree = "<group>"; };
+		14BAD4E02FC82B1600E56229 /* AnalyticsSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSummaryCard.swift; sourceTree = "<group>"; };
+		14BAD4E22FC82B1F00E56229 /* DashboardOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardOverviewView.swift; sourceTree = "<group>"; };
+		14BAD4E42FC82B2500E56229 /* VehicleStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleStatusView.swift; sourceTree = "<group>"; };
+		14BAD4E62FC82B2A00E56229 /* DailySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummaryView.swift; sourceTree = "<group>"; };
+		14BAD4E82FC82B2E00E56229 /* DriverPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverPerformanceView.swift; sourceTree = "<group>"; };
+		14BAD4EA2FC82B3700E56229 /* DriverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMapView.swift; sourceTree = "<group>"; };
+		14BAD4EC2FC82B3C00E56229 /* MacLiveRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLiveRouteView.swift; sourceTree = "<group>"; };
+		14BAD4EE2FC82B4500E56229 /* RouteInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfoCardView.swift; sourceTree = "<group>"; };
+		14BAD4F02FC82B5000E56229 /* PassengerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerListView.swift; sourceTree = "<group>"; };
+		14BAD4F22FC82B5800E56229 /* MacRouteDetailPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRouteDetailPanel.swift; sourceTree = "<group>"; };
+		14BAD4F42FC82B5D00E56229 /* RouteDistanceBreakdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDistanceBreakdownView.swift; sourceTree = "<group>"; };
+		14BAD4F62FC82B6600E56229 /* TransportListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportListView.swift; sourceTree = "<group>"; };
+		14BAD4F82FC82B6B00E56229 /* ChildDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailView.swift; sourceTree = "<group>"; };
+		14BAD4FA2FC82B7000E56229 /* TripSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSummaryView.swift; sourceTree = "<group>"; };
+		14BAD4FC2FC82B7600E56229 /* StatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadgeView.swift; sourceTree = "<group>"; };
+		14BAD4FE2FC82B7F00E56229 /* MacManifestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacManifestView.swift; sourceTree = "<group>"; };
+		14BAD5002FC82B8400E56229 /* MacChildDetailPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacChildDetailPanel.swift; sourceTree = "<group>"; };
+		14BAD5022FC82B8E00E56229 /* PickupConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupConfirmationView.swift; sourceTree = "<group>"; };
+		14BAD5042FC82B9300E56229 /* TripHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryView.swift; sourceTree = "<group>"; };
+		14BAD5062FC82B9B00E56229 /* IncidentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentListView.swift; sourceTree = "<group>"; };
+		14BAD5082FC82BA300E56229 /* IncidentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentDetailView.swift; sourceTree = "<group>"; };
+		14BAD50A2FC82BA800E56229 /* IncidentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentFormView.swift; sourceTree = "<group>"; };
+		14BAD50C2FC82BB700E56229 /* IncidentSummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentSummaryCardView.swift; sourceTree = "<group>"; };
+		14BAD50E2FC82BBF00E56229 /* EmergencyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyAlertView.swift; sourceTree = "<group>"; };
+		14BAD5102FC82BC800E56229 /* AnalyticsDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDashboardView.swift; sourceTree = "<group>"; };
+		14BAD5122FC82BCD00E56229 /* PickupChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupChartView.swift; sourceTree = "<group>"; };
+		14BAD5142FC82BD600E56229 /* IncidentChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentChartView.swift; sourceTree = "<group>"; };
+		14BAD5162FC82BDB00E56229 /* RoutePerformanceChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePerformanceChartView.swift; sourceTree = "<group>"; };
+		14BAD5182FC82BE000E56229 /* WeeklyTripsChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTripsChartView.swift; sourceTree = "<group>"; };
+		14BAD51A2FC82BE800E56229 /* DriverEfficiencyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverEfficiencyChartView.swift; sourceTree = "<group>"; };
+		14BAD51C2FC82BF000E56229 /* ExportReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportReportView.swift; sourceTree = "<group>"; };
+		14BAD51E2FC82BF500E56229 /* ComplianceNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceNotesView.swift; sourceTree = "<group>"; };
+		14BAD5202FC82BFE00E56229 /* DailyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportView.swift; sourceTree = "<group>"; };
+		14BAD5222FC82C0400E56229 /* IncidentReportExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentReportExportView.swift; sourceTree = "<group>"; };
+		14BAD5242FC82C0B00E56229 /* DriverNotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverNotesListView.swift; sourceTree = "<group>"; };
+		14BAD5262FC82C1000E56229 /* DriverNoteEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverNoteEditorView.swift; sourceTree = "<group>"; };
+		14BAD5282FC82C1B00E56229 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		14BAD52A2FC82C2100E56229 /* MacSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSettingsView.swift; sourceTree = "<group>"; };
+		14BAD52C2FC82C2600E56229 /* AccessibilitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySettingsView.swift; sourceTree = "<group>"; };
+		14BAD52E2FC8353200E56229 /* SampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
+		14BAD5302FC8354800E56229 /* ChartsPreviewData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ChartsPreviewData.json; sourceTree = "<group>"; };
+		14BAD5342FC86ABC00E56229 /* LocalAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationService.swift; sourceTree = "<group>"; };
+		14BAD5362FC86AD700E56229 /* SecurityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityViewModel.swift; sourceTree = "<group>"; };
+		14BAD5392FC86AF900E56229 /* SecureAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAccessView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14BAD4372FC8268A00E56229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BAD4482FC8268C00E56229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BAD4522FC8268C00E56229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BAD4312FC8268A00E56229 = {
+			isa = PBXGroup;
+			children = (
+				14BAD43C2FC8268A00E56229 /* NurseryConnectMacOS */,
+				14BAD44E2FC8268C00E56229 /* NurseryConnectMacOSTests */,
+				14BAD4582FC8268C00E56229 /* NurseryConnectMacOSUITests */,
+				14BAD43B2FC8268A00E56229 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14BAD43B2FC8268A00E56229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD43A2FC8268A00E56229 /* NurseryConnectMacOS.app */,
+				14BAD44B2FC8268C00E56229 /* NurseryConnectMacOSTests.xctest */,
+				14BAD4552FC8268C00E56229 /* NurseryConnectMacOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14BAD43C2FC8268A00E56229 /* NurseryConnectMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD46D2FC827F200E56229 /* Views */,
+				14BAD46C2FC827E900E56229 /* ViewModels */,
+				14BAD46B2FC827E100E56229 /* Models */,
+				14BAD46A2FC827D600E56229 /* Services */,
+				14BAD4692FC827C400E56229 /* Helpers */,
+				14BAD4682FC827BB00E56229 /* Resources */,
+				14BAD43D2FC8268A00E56229 /* NurseryConnectMacOSApp.swift */,
+				14BAD43F2FC8268A00E56229 /* ContentView.swift */,
+				14BAD4412FC8268C00E56229 /* Assets.xcassets */,
+				14BAD4462FC8268C00E56229 /* NurseryConnectMacOS.entitlements */,
+				14BAD4432FC8268C00E56229 /* Preview Content */,
+			);
+			path = NurseryConnectMacOS;
+			sourceTree = "<group>";
+		};
+		14BAD4432FC8268C00E56229 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4442FC8268C00E56229 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14BAD44E2FC8268C00E56229 /* NurseryConnectMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD44F2FC8268C00E56229 /* NurseryConnectMacOSTests.swift */,
+			);
+			path = NurseryConnectMacOSTests;
+			sourceTree = "<group>";
+		};
+		14BAD4582FC8268C00E56229 /* NurseryConnectMacOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4592FC8268C00E56229 /* NurseryConnectMacOSUITests.swift */,
+				14BAD45B2FC8268C00E56229 /* NurseryConnectMacOSUITestsLaunchTests.swift */,
+			);
+			path = NurseryConnectMacOSUITests;
+			sourceTree = "<group>";
+		};
+		14BAD4682FC827BB00E56229 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD52E2FC8353200E56229 /* SampleData.json */,
+				14BAD5302FC8354800E56229 /* ChartsPreviewData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14BAD4692FC827C400E56229 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4782FC8299D00E56229 /* Constants.swift */,
+				14BAD47A2FC829AF00E56229 /* DateFormatterHelper.swift */,
+				14BAD47C2FC829B800E56229 /* Extensions.swift */,
+				14BAD47E2FC829C000E56229 /* AccessibilityHelper.swift */,
+				14BAD4802FC829C600E56229 /* ChartHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		14BAD46A2FC827D600E56229 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4822FC829D000E56229 /* DataService.swift */,
+				14BAD4842FC829D800E56229 /* StorageService.swift */,
+				14BAD4862FC829DE00E56229 /* MockDataService.swift */,
+				14BAD4882FC829E500E56229 /* LocationService.swift */,
+				14BAD48A2FC829EB00E56229 /* ThemeService.swift */,
+				14BAD48C2FC829F100E56229 /* IncidentStorageService.swift */,
+				14BAD48E2FC829FC00E56229 /* AnalyticsService.swift */,
+				14BAD4902FC82A0200E56229 /* ReportExportService.swift */,
+				14BAD4922FC82A0700E56229 /* NotificationService.swift */,
+				14BAD5342FC86ABC00E56229 /* LocalAuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14BAD46B2FC827E100E56229 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4942FC82A1800E56229 /* Child.swift */,
+				14BAD4962FC82A2100E56229 /* TransportTrip.swift */,
+				14BAD4982FC82A2800E56229 /* DriverLocation.swift */,
+				14BAD49A2FC82A2E00E56229 /* TransportStatus.swift */,
+				14BAD49C2FC82A3500E56229 /* RouteStop.swift */,
+				14BAD49E2FC82A3A00E56229 /* AppTheme.swift */,
+				14BAD4A02FC82A3F00E56229 /* MapStyleOption.swift */,
+				14BAD4A22FC82A4800E56229 /* Passenger.swift */,
+				14BAD4A42FC82A4D00E56229 /* IncidentReport.swift */,
+				14BAD4A62FC82A5200E56229 /* IncidentType.swift */,
+				14BAD4A82FC82A5600E56229 /* IncidentSeverity.swift */,
+				14BAD4AA2FC82A5A00E56229 /* AnalyticsDataPoint.swift */,
+				14BAD4AC2FC82A5F00E56229 /* TripHistoryRecord.swift */,
+				14BAD4AE2FC82A6300E56229 /* DriverNote.swift */,
+				14BAD4B02FC82A6700E56229 /* SidebarSelection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14BAD46C2FC827E900E56229 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4B22FC82A7500E56229 /* TransportViewModel.swift */,
+				14BAD4B42FC82A8000E56229 /* LocationViewModel.swift */,
+				14BAD4B62FC82A8C00E56229 /* ThemeViewModel.swift */,
+				14BAD4B82FC82A9200E56229 /* IncidentViewModel.swift */,
+				14BAD4BA2FC82A9800E56229 /* AnalyticsViewModel.swift */,
+				14BAD4BC2FC82A9D00E56229 /* TripHistoryViewModel.swift */,
+				14BAD4BE2FC82AA200E56229 /* DriverNotesViewModel.swift */,
+				14BAD4C02FC82AA700E56229 /* MacNavigationViewModel.swift */,
+				14BAD5362FC86AD700E56229 /* SecurityViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14BAD46D2FC827F200E56229 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD5382FC86AEE00E56229 /* Security */,
+				14BAD4772FC8286900E56229 /* Settings */,
+				14BAD4762FC8285C00E56229 /* Notes */,
+				14BAD4752FC8285400E56229 /* Reports */,
+				14BAD4742FC8284D00E56229 /* Analytics */,
+				14BAD4732FC8284600E56229 /* Incidents */,
+				14BAD4722FC8283E00E56229 /* Transport */,
+				14BAD4712FC8283300E56229 /* Map */,
+				14BAD4702FC8282C00E56229 /* Dashboard */,
+				14BAD46F2FC8282500E56229 /* Components */,
+				14BAD46E2FC8281C00E56229 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14BAD46E2FC8281C00E56229 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4C22FC82AB900E56229 /* MacRootView.swift */,
+				14BAD4C42FC82AC000E56229 /* MacSidebarView.swift */,
+				14BAD4C62FC82AC500E56229 /* MacDashboardView.swift */,
+				14BAD4C82FC82ACA00E56229 /* MacToolbarView.swift */,
+				14BAD4CA2FC82AD000E56229 /* WindowGroupManager.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		14BAD46F2FC8282500E56229 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4CC2FC82AE100E56229 /* ChildRowView.swift */,
+				14BAD4CE2FC82AE700E56229 /* PrimaryButton.swift */,
+				14BAD4D02FC82AEC00E56229 /* EmptyStateView.swift */,
+				14BAD4D22FC82AF100E56229 /* SectionHeaderView.swift */,
+				14BAD4D42FC82AF600E56229 /* InfoCardView.swift */,
+				14BAD4D62FC82AFB00E56229 /* TripStatusBannerView.swift */,
+				14BAD4D82FC82B0000E56229 /* MacInfoCardView.swift */,
+				14BAD4DA2FC82B0600E56229 /* MacStatusPillView.swift */,
+				14BAD4DC2FC82B0C00E56229 /* ToolbarActionButton.swift */,
+				14BAD4DE2FC82B1100E56229 /* DashboardMetricCard.swift */,
+				14BAD4E02FC82B1600E56229 /* AnalyticsSummaryCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		14BAD4702FC8282C00E56229 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4E22FC82B1F00E56229 /* DashboardOverviewView.swift */,
+				14BAD4E42FC82B2500E56229 /* VehicleStatusView.swift */,
+				14BAD4E62FC82B2A00E56229 /* DailySummaryView.swift */,
+				14BAD4E82FC82B2E00E56229 /* DriverPerformanceView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		14BAD4712FC8283300E56229 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4EA2FC82B3700E56229 /* DriverMapView.swift */,
+				14BAD4EC2FC82B3C00E56229 /* MacLiveRouteView.swift */,
+				14BAD4EE2FC82B4500E56229 /* RouteInfoCardView.swift */,
+				14BAD4F02FC82B5000E56229 /* PassengerListView.swift */,
+				14BAD4F22FC82B5800E56229 /* MacRouteDetailPanel.swift */,
+				14BAD4F42FC82B5D00E56229 /* RouteDistanceBreakdownView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		14BAD4722FC8283E00E56229 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD4F62FC82B6600E56229 /* TransportListView.swift */,
+				14BAD4F82FC82B6B00E56229 /* ChildDetailView.swift */,
+				14BAD4FA2FC82B7000E56229 /* TripSummaryView.swift */,
+				14BAD4FC2FC82B7600E56229 /* StatusBadgeView.swift */,
+				14BAD4FE2FC82B7F00E56229 /* MacManifestView.swift */,
+				14BAD5002FC82B8400E56229 /* MacChildDetailPanel.swift */,
+				14BAD5022FC82B8E00E56229 /* PickupConfirmationView.swift */,
+				14BAD5042FC82B9300E56229 /* TripHistoryView.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		14BAD4732FC8284600E56229 /* Incidents */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD5062FC82B9B00E56229 /* IncidentListView.swift */,
+				14BAD5082FC82BA300E56229 /* IncidentDetailView.swift */,
+				14BAD50A2FC82BA800E56229 /* IncidentFormView.swift */,
+				14BAD50C2FC82BB700E56229 /* IncidentSummaryCardView.swift */,
+				14BAD50E2FC82BBF00E56229 /* EmergencyAlertView.swift */,
+			);
+			path = Incidents;
+			sourceTree = "<group>";
+		};
+		14BAD4742FC8284D00E56229 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD5102FC82BC800E56229 /* AnalyticsDashboardView.swift */,
+				14BAD5122FC82BCD00E56229 /* PickupChartView.swift */,
+				14BAD5142FC82BD600E56229 /* IncidentChartView.swift */,
+				14BAD5162FC82BDB00E56229 /* RoutePerformanceChartView.swift */,
+				14BAD5182FC82BE000E56229 /* WeeklyTripsChartView.swift */,
+				14BAD51A2FC82BE800E56229 /* DriverEfficiencyChartView.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		14BAD4752FC8285400E56229 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD51C2FC82BF000E56229 /* ExportReportView.swift */,
+				14BAD51E2FC82BF500E56229 /* ComplianceNotesView.swift */,
+				14BAD5202FC82BFE00E56229 /* DailyReportView.swift */,
+				14BAD5222FC82C0400E56229 /* IncidentReportExportView.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		14BAD4762FC8285C00E56229 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD5242FC82C0B00E56229 /* DriverNotesListView.swift */,
+				14BAD5262FC82C1000E56229 /* DriverNoteEditorView.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		14BAD4772FC8286900E56229 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD5282FC82C1B00E56229 /* SettingsView.swift */,
+				14BAD52A2FC82C2100E56229 /* MacSettingsView.swift */,
+				14BAD52C2FC82C2600E56229 /* AccessibilitySettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		14BAD5382FC86AEE00E56229 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				14BAD5392FC86AF900E56229 /* SecureAccessView.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14BAD4392FC8268A00E56229 /* NurseryConnectMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BAD45F2FC8268C00E56229 /* Build configuration list for PBXNativeTarget "NurseryConnectMacOS" */;
+			buildPhases = (
+				14BAD4362FC8268A00E56229 /* Sources */,
+				14BAD4372FC8268A00E56229 /* Frameworks */,
+				14BAD4382FC8268A00E56229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NurseryConnectMacOS;
+			productName = NurseryConnectMacOS;
+			productReference = 14BAD43A2FC8268A00E56229 /* NurseryConnectMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14BAD44A2FC8268C00E56229 /* NurseryConnectMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BAD4622FC8268C00E56229 /* Build configuration list for PBXNativeTarget "NurseryConnectMacOSTests" */;
+			buildPhases = (
+				14BAD4472FC8268C00E56229 /* Sources */,
+				14BAD4482FC8268C00E56229 /* Frameworks */,
+				14BAD4492FC8268C00E56229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14BAD44D2FC8268C00E56229 /* PBXTargetDependency */,
+			);
+			name = NurseryConnectMacOSTests;
+			productName = NurseryConnectMacOSTests;
+			productReference = 14BAD44B2FC8268C00E56229 /* NurseryConnectMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14BAD4542FC8268C00E56229 /* NurseryConnectMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BAD4652FC8268C00E56229 /* Build configuration list for PBXNativeTarget "NurseryConnectMacOSUITests" */;
+			buildPhases = (
+				14BAD4512FC8268C00E56229 /* Sources */,
+				14BAD4522FC8268C00E56229 /* Frameworks */,
+				14BAD4532FC8268C00E56229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14BAD4572FC8268C00E56229 /* PBXTargetDependency */,
+			);
+			name = NurseryConnectMacOSUITests;
+			productName = NurseryConnectMacOSUITests;
+			productReference = 14BAD4552FC8268C00E56229 /* NurseryConnectMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14BAD4322FC8268A00E56229 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					14BAD4392FC8268A00E56229 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					14BAD44A2FC8268C00E56229 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 14BAD4392FC8268A00E56229;
+					};
+					14BAD4542FC8268C00E56229 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 14BAD4392FC8268A00E56229;
+					};
+				};
+			};
+			buildConfigurationList = 14BAD4352FC8268A00E56229 /* Build configuration list for PBXProject "NurseryConnectMacOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14BAD4312FC8268A00E56229;
+			productRefGroup = 14BAD43B2FC8268A00E56229 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14BAD4392FC8268A00E56229 /* NurseryConnectMacOS */,
+				14BAD44A2FC8268C00E56229 /* NurseryConnectMacOSTests */,
+				14BAD4542FC8268C00E56229 /* NurseryConnectMacOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14BAD4382FC8268A00E56229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BAD4452FC8268C00E56229 /* Preview Assets.xcassets in Resources */,
+				14BAD52F2FC8353200E56229 /* SampleData.json in Resources */,
+				14BAD4422FC8268C00E56229 /* Assets.xcassets in Resources */,
+				14BAD5312FC8354800E56229 /* ChartsPreviewData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BAD4492FC8268C00E56229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BAD4532FC8268C00E56229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BAD4362FC8268A00E56229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BAD5232FC82C0400E56229 /* IncidentReportExportView.swift in Sources */,
+				14BAD4A12FC82A3F00E56229 /* MapStyleOption.swift in Sources */,
+				14BAD4FF2FC82B7F00E56229 /* MacManifestView.swift in Sources */,
+				14BAD4E72FC82B2A00E56229 /* DailySummaryView.swift in Sources */,
+				14BAD50F2FC82BBF00E56229 /* EmergencyAlertView.swift in Sources */,
+				14BAD4C52FC82AC000E56229 /* MacSidebarView.swift in Sources */,
+				14BAD5352FC86ABC00E56229 /* LocalAuthenticationService.swift in Sources */,
+				14BAD49D2FC82A3500E56229 /* RouteStop.swift in Sources */,
+				14BAD5172FC82BDB00E56229 /* RoutePerformanceChartView.swift in Sources */,
+				14BAD4EF2FC82B4500E56229 /* RouteInfoCardView.swift in Sources */,
+				14BAD4D52FC82AF600E56229 /* InfoCardView.swift in Sources */,
+				14BAD4CD2FC82AE100E56229 /* ChildRowView.swift in Sources */,
+				14BAD4B72FC82A8C00E56229 /* ThemeViewModel.swift in Sources */,
+				14BAD4A32FC82A4800E56229 /* Passenger.swift in Sources */,
+				14BAD49F2FC82A3A00E56229 /* AppTheme.swift in Sources */,
+				14BAD4F52FC82B5D00E56229 /* RouteDistanceBreakdownView.swift in Sources */,
+				14BAD5152FC82BD600E56229 /* IncidentChartView.swift in Sources */,
+				14BAD4E32FC82B1F00E56229 /* DashboardOverviewView.swift in Sources */,
+				14BAD47D2FC829B800E56229 /* Extensions.swift in Sources */,
+				14BAD4CB2FC82AD000E56229 /* WindowGroupManager.swift in Sources */,
+				14BAD4C12FC82AA700E56229 /* MacNavigationViewModel.swift in Sources */,
+				14BAD4A92FC82A5600E56229 /* IncidentSeverity.swift in Sources */,
+				14BAD4402FC8268A00E56229 /* ContentView.swift in Sources */,
+				14BAD52D2FC82C2600E56229 /* AccessibilitySettingsView.swift in Sources */,
+				14BAD50B2FC82BA800E56229 /* IncidentFormView.swift in Sources */,
+				14BAD4BD2FC82A9D00E56229 /* TripHistoryViewModel.swift in Sources */,
+				14BAD4AB2FC82A5A00E56229 /* AnalyticsDataPoint.swift in Sources */,
+				14BAD4E92FC82B2E00E56229 /* DriverPerformanceView.swift in Sources */,
+				14BAD4E52FC82B2500E56229 /* VehicleStatusView.swift in Sources */,
+				14BAD43E2FC8268A00E56229 /* NurseryConnectMacOSApp.swift in Sources */,
+				14BAD5092FC82BA300E56229 /* IncidentDetailView.swift in Sources */,
+				14BAD5372FC86AD700E56229 /* SecurityViewModel.swift in Sources */,
+				14BAD4C32FC82AB900E56229 /* MacRootView.swift in Sources */,
+				14BAD47B2FC829AF00E56229 /* DateFormatterHelper.swift in Sources */,
+				14BAD4F32FC82B5800E56229 /* MacRouteDetailPanel.swift in Sources */,
+				14BAD5072FC82B9B00E56229 /* IncidentListView.swift in Sources */,
+				14BAD4E12FC82B1600E56229 /* AnalyticsSummaryCard.swift in Sources */,
+				14BAD4812FC829C600E56229 /* ChartHelper.swift in Sources */,
+				14BAD4DB2FC82B0600E56229 /* MacStatusPillView.swift in Sources */,
+				14BAD4912FC82A0200E56229 /* ReportExportService.swift in Sources */,
+				14BAD4FD2FC82B7600E56229 /* StatusBadgeView.swift in Sources */,
+				14BAD4B32FC82A7500E56229 /* TransportViewModel.swift in Sources */,
+				14BAD4D72FC82AFB00E56229 /* TripStatusBannerView.swift in Sources */,
+				14BAD4CF2FC82AE700E56229 /* PrimaryButton.swift in Sources */,
+				14BAD4992FC82A2800E56229 /* DriverLocation.swift in Sources */,
+				14BAD4DD2FC82B0C00E56229 /* ToolbarActionButton.swift in Sources */,
+				14BAD4F72FC82B6600E56229 /* TransportListView.swift in Sources */,
+				14BAD4AF2FC82A6300E56229 /* DriverNote.swift in Sources */,
+				14BAD4972FC82A2100E56229 /* TransportTrip.swift in Sources */,
+				14BAD4B52FC82A8000E56229 /* LocationViewModel.swift in Sources */,
+				14BAD4ED2FC82B3C00E56229 /* MacLiveRouteView.swift in Sources */,
+				14BAD4B92FC82A9200E56229 /* IncidentViewModel.swift in Sources */,
+				14BAD51B2FC82BE800E56229 /* DriverEfficiencyChartView.swift in Sources */,
+				14BAD4EB2FC82B3700E56229 /* DriverMapView.swift in Sources */,
+				14BAD4DF2FC82B1100E56229 /* DashboardMetricCard.swift in Sources */,
+				14BAD48B2FC829EB00E56229 /* ThemeService.swift in Sources */,
+				14BAD5272FC82C1000E56229 /* DriverNoteEditorView.swift in Sources */,
+				14BAD4B12FC82A6700E56229 /* SidebarSelection.swift in Sources */,
+				14BAD4C92FC82ACA00E56229 /* MacToolbarView.swift in Sources */,
+				14BAD4BF2FC82AA200E56229 /* DriverNotesViewModel.swift in Sources */,
+				14BAD4AD2FC82A5F00E56229 /* TripHistoryRecord.swift in Sources */,
+				14BAD51D2FC82BF000E56229 /* ExportReportView.swift in Sources */,
+				14BAD49B2FC82A2E00E56229 /* TransportStatus.swift in Sources */,
+				14BAD5212FC82BFE00E56229 /* DailyReportView.swift in Sources */,
+				14BAD4F92FC82B6B00E56229 /* ChildDetailView.swift in Sources */,
+				14BAD4BB2FC82A9800E56229 /* AnalyticsViewModel.swift in Sources */,
+				14BAD4D92FC82B0000E56229 /* MacInfoCardView.swift in Sources */,
+				14BAD4872FC829DE00E56229 /* MockDataService.swift in Sources */,
+				14BAD4892FC829E500E56229 /* LocationService.swift in Sources */,
+				14BAD53A2FC86AF900E56229 /* SecureAccessView.swift in Sources */,
+				14BAD5032FC82B8E00E56229 /* PickupConfirmationView.swift in Sources */,
+				14BAD4C72FC82AC500E56229 /* MacDashboardView.swift in Sources */,
+				14BAD48D2FC829F100E56229 /* IncidentStorageService.swift in Sources */,
+				14BAD52B2FC82C2100E56229 /* MacSettingsView.swift in Sources */,
+				14BAD4952FC82A1800E56229 /* Child.swift in Sources */,
+				14BAD5192FC82BE000E56229 /* WeeklyTripsChartView.swift in Sources */,
+				14BAD47F2FC829C000E56229 /* AccessibilityHelper.swift in Sources */,
+				14BAD5252FC82C0B00E56229 /* DriverNotesListView.swift in Sources */,
+				14BAD50D2FC82BB700E56229 /* IncidentSummaryCardView.swift in Sources */,
+				14BAD4A72FC82A5200E56229 /* IncidentType.swift in Sources */,
+				14BAD4792FC8299D00E56229 /* Constants.swift in Sources */,
+				14BAD4A52FC82A4D00E56229 /* IncidentReport.swift in Sources */,
+				14BAD5292FC82C1B00E56229 /* SettingsView.swift in Sources */,
+				14BAD4FB2FC82B7000E56229 /* TripSummaryView.swift in Sources */,
+				14BAD4932FC82A0700E56229 /* NotificationService.swift in Sources */,
+				14BAD51F2FC82BF500E56229 /* ComplianceNotesView.swift in Sources */,
+				14BAD5112FC82BC800E56229 /* AnalyticsDashboardView.swift in Sources */,
+				14BAD4F12FC82B5000E56229 /* PassengerListView.swift in Sources */,
+				14BAD4D32FC82AF100E56229 /* SectionHeaderView.swift in Sources */,
+				14BAD5132FC82BCD00E56229 /* PickupChartView.swift in Sources */,
+				14BAD4852FC829D800E56229 /* StorageService.swift in Sources */,
+				14BAD48F2FC829FC00E56229 /* AnalyticsService.swift in Sources */,
+				14BAD4832FC829D000E56229 /* DataService.swift in Sources */,
+				14BAD4D12FC82AEC00E56229 /* EmptyStateView.swift in Sources */,
+				14BAD5052FC82B9300E56229 /* TripHistoryView.swift in Sources */,
+				14BAD5012FC82B8400E56229 /* MacChildDetailPanel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BAD4472FC8268C00E56229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BAD4502FC8268C00E56229 /* NurseryConnectMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BAD4512FC8268C00E56229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BAD45C2FC8268C00E56229 /* NurseryConnectMacOSUITestsLaunchTests.swift in Sources */,
+				14BAD45A2FC8268C00E56229 /* NurseryConnectMacOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14BAD44D2FC8268C00E56229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14BAD4392FC8268A00E56229 /* NurseryConnectMacOS */;
+			targetProxy = 14BAD44C2FC8268C00E56229 /* PBXContainerItemProxy */;
+		};
+		14BAD4572FC8268C00E56229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14BAD4392FC8268A00E56229 /* NurseryConnectMacOS */;
+			targetProxy = 14BAD4562FC8268C00E56229 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14BAD45D2FC8268C00E56229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14BAD45E2FC8268C00E56229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		14BAD4602FC8268C00E56229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NurseryConnectMacOS/NurseryConnectMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NurseryConnectMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = VTZK896352;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IT22118318.NurseryConnectMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		14BAD4612FC8268C00E56229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NurseryConnectMacOS/NurseryConnectMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NurseryConnectMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = VTZK896352;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IT22118318.NurseryConnectMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		14BAD4632FC8268C00E56229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTZK896352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IT22118318.NurseryConnectMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NurseryConnectMacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NurseryConnectMacOS";
+			};
+			name = Debug;
+		};
+		14BAD4642FC8268C00E56229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTZK896352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IT22118318.NurseryConnectMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NurseryConnectMacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NurseryConnectMacOS";
+			};
+			name = Release;
+		};
+		14BAD4662FC8268C00E56229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTZK896352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IT22118318.NurseryConnectMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NurseryConnectMacOS;
+			};
+			name = Debug;
+		};
+		14BAD4672FC8268C00E56229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTZK896352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IT22118318.NurseryConnectMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NurseryConnectMacOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14BAD4352FC8268A00E56229 /* Build configuration list for PBXProject "NurseryConnectMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BAD45D2FC8268C00E56229 /* Debug */,
+				14BAD45E2FC8268C00E56229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BAD45F2FC8268C00E56229 /* Build configuration list for PBXNativeTarget "NurseryConnectMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BAD4602FC8268C00E56229 /* Debug */,
+				14BAD4612FC8268C00E56229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BAD4622FC8268C00E56229 /* Build configuration list for PBXNativeTarget "NurseryConnectMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BAD4632FC8268C00E56229 /* Debug */,
+				14BAD4642FC8268C00E56229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BAD4652FC8268C00E56229 /* Build configuration list for PBXNativeTarget "NurseryConnectMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BAD4662FC8268C00E56229 /* Debug */,
+				14BAD4672FC8268C00E56229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14BAD4322FC8268A00E56229 /* Project object */;
+}
